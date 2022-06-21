@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.encabezado {
+    background-image: url("../assets/portada.jpg");
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+nav {
+    background-color:#545454;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.navbar {
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+
+nav ul li a, article {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+
+.main {
+    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.titulo-principal {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 1px;
+    background-color: #545454;
+    width: 100%;
+}
+
+.article-productos {
+    text-align: center;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.container-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card-servicios {
+    width: 20rem;
+}
+
+.card-servicios img {
+    width: 100%;
+}
+
+.card-servicios h2 {
+    text-align: center;
+}
+
+.pie-de-pagina {
+    background-color: #545454;
+    display: grid;
+    grid-template-areas:
+    "redes-sociales"
+    "copy" 
+    ;
+    justify-content: center;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.redes {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    grid-area: redes-sociales;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.redes a:hover {
+    color: red;
+}
+
+.pie-de-pagina p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    grid-area: copy;
+}
+
+/* ESTILOS PRODUCTOS */
+
+.main-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 6rem;
+}
+
+.container-card {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card2, .card4, .card6 {
+    flex-direction: row-reverse;
+}
+
+.container-card img {
+    width: 70%;
+}
+
+.container-card h2, .container-card p {
+    text-align: center;
+    margin-bottom: 1;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contenedor-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 200px;
+    width: 50%;
+    grid-gap: 1rem;
+}
+
+.contenedor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-ancha {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.img-larga {
+    grid-row-start: span 2;
+}
+
+@media screen and (max-width: 500px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .encabezado {
+        height: 50vh;
+    }
+
+    .texto-article {
+        text-align: center;
+    }
+
+    .contenedor-img {
+        display: flex;
+        width: 100%;
+    }
+    
+    }
+
+
+
+
