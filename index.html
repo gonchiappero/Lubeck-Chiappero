@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <!--Linkeo Libreria AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/225f23f083.js" crossorigin="anonymous"></script>
     <title>LUBECK</title>
 </head>
@@ -52,20 +54,20 @@
         </article>
 
         <section class="container-servicios">
-            <div class="card-servicios">
+            <div data-aos="fade-down-right" class="card-servicios">
                 <img src="./assets/diseno-iluminacion.jpg" alt="disenos">
                 <h2>DISEÑOS PERSONALIZADOS</h2>
                 <p>Nuestros disenadores estan dispuestos a ofrecerte las mejores opciones de acuerdo a tus planes, con
                     los mejores softwares de diseno</p>
             </div>
 
-            <div class="card-servicios">
+            <div data-aos="fade-down" class="card-servicios">
                 <img src="./assets/envios.jpg" alt="cajas">
                 <h2>ENVIOS A DOMICILIO</h2>
                 <p>Contamos con envios a domicilio, con transporte propio, a todo el pais. Consulta nuestras tarifas</p>
             </div>
 
-            <div class="card-servicios">
+            <div data-aos="fade-down-left" class="card-servicios">
                 <img src="./assets/descuentos.jpg" alt="descuentos">
                 <h2>DESCUENTOS POR MAYOR</h2>
                 <p>Compra al mejor precio del mercado, descuentos por cantidad y por montos.</p>
@@ -92,6 +94,12 @@
         <p>&copy Copyright Gonzalo Chiappero. All right reserved</p>
     </footer>
 
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
