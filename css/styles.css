@@ -153,6 +153,11 @@ article p {
     gap: 6rem;
 }
 
+.container-productos img:hover {
+    transform: scale(1.5);
+}
+
+
 .container-card {
     display: flex;
     width: 80%;
@@ -195,6 +200,7 @@ article p {
     height: 100%;
     object-fit: cover;
 }
+
 
 .img-ancha {
     grid-column-start: span 2;
