@@ -9,50 +9,39 @@
 
 .encabezado {
     background-image: url("../assets/portada.jpg");
-    height: 100vh;
+    height: 80vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
+   }
 
-
-
-nav {
+.bg-propio {
     background-color:#545454;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    
-}
-
-.navbar {
-    list-style: none;
+    position: fixed!important;
     font-weight: bold;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+    width: 100%;
 }
 
-
-
-nav ul li a, article {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: black;
-}
-
-nav ul li a:hover {
+.nav-item a {
     color: white;
 }
 
 
 
+.mb-3 {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+}
+
 .main {
     margin-left: 3rem;
     margin-top: 5rem;
     margin-bottom: 2rem;
+}
+
+.btn-secondary {
+    margin-left: 3rem;
 }
 
 .titulo-principal {
@@ -79,24 +68,7 @@ article p {
     margin-right: 1rem;
 }
 
-.container-servicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-}
 
-.card-servicios {
-    width: 20rem;
-}
-
-.card-servicios img {
-    width: 100%;
-}
-
-.card-servicios h2 {
-    text-align: center;
-}
 
 .pie-de-pagina {
     background-color: #545454;
