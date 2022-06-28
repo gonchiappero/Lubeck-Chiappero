@@ -7,14 +7,6 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.encabezado {
-    background-image: url("../assets/portada.jpg");
-    height: 100vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 
 
 nav {
@@ -22,7 +14,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
     width: 100%;
     
 }
@@ -232,6 +223,13 @@ article p {
     
     }
 
-
-
+.miestilo {
+    background-color: #545454;
+ }
+ @media (max-width: 768px) {
+    .miestilo {
+    background-color: rgb(116, 116, 28);
+ }
+ }
+ 
 
